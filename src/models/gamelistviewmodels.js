@@ -1,13 +1,13 @@
 Game = function(name, priority)
 {
-	self = this;
+	var self = this;
 	this.name;
 	this.priority;
 };
 
 MyGameListViewModel = function(games)
 {
-	self = this;
+	var self = this;
 	self.gamesToPlay = ko.observableArray(games);
 	self.gamesCount = ko.computed(function()
 	{
